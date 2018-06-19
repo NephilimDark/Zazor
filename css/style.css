@@ -440,18 +440,27 @@ margin-left: 19px;
   font-size: 12px;
 }
 
-.season label, input {
-vertical-align: middle;
+ input[type="checkbox"] {
+  display: none;
 }
 
 
 
-input[type="checkbox"] {
+.season input[type="checkbox"]+label::before {
+  display: inline-block;
+  content: "";
   width: 10px;
   height: 10px;
   border: 1px solid #b6b6b7;
   background: #fff;
   box-shadow: inset 10px 10px 5px -10px rgba(0,0,0,0.75);
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 3px;
+}
+
+.season input[type="checkbox"]:checked+label::before {
+  background: #0d385c;
 }
 
 .search2 {
@@ -483,7 +492,7 @@ input[type="checkbox"] {
   font-weight: bold;
   font-size: 12px;
   color: #154467;
-  padding-left: 11px;
+
 }
 
 .form3 {
@@ -491,6 +500,24 @@ display: inline-block;
 margin-left: 19px;
 font-size: 10px;
 position: relative;
+width: 140px;
+}
+
+
+.disc1 label{
+  width: 75px;
+  line-height: 26px;
+  padding-right: 6px;
+}
+
+.disc1 span {
+  font-size: 9px;
+  color: #8d999d;
+}
+
+.disc1 select {
+  width: 55px;
+  background-position-x: 37px;
 }
 
 .disc span {
@@ -498,50 +525,108 @@ position: relative;
   color: #8d999d;
 }
 
-
-.disc:first-child {
-  height: 20px;
+.disc2 select {
+  width: 45px;
+  margin-bottom: 14px;
+  margin-top: 5px;
+  background-position-x: 27px;
 }
 
-.disc:nth-child(2) {
-  line-height: 8px;
-  height: 30px;
+.disc2 label {
+  float: left;
+  font-size: 10px;
+  font-family: Arial;
+  width: 62px;
+  padding-right: 22px;
+  line-height: 10px;
+  margin-bottom: 4px;
 }
 
-.disc:last-child {
-  line-height: 5px;
-  height: 30px;
+.disc2 span {
+  font-size: 9px;
+  color: #8d999d;
 }
 
-.disc .amount {
-  width: 50px;
-  padding-left: -2px;
+.disc label{
+  float: left;
+  font-size: 10px;
+  font-family: Arial;
+  width: 62px;
+  padding-right: 22px;
+  line-height: 10px;
+  margin-bottom: 4px;
 }
 
 .disc select {
   width: 55px;
-  float:right;
-  background-position-x: 36px;
+  background-position-x: 37px;
 }
 
-.disc label {
-  width: 63px;
-  padding-right: 11px;
+.form3::after {
+position: absolute;
+width: 1px;
+height: 106px;
+top: 7px;
+left: 161px;
+background: #8d999d;
+content: "";
 }
 
-.disc2 span {
-  width: 84px;
+.dco {
+  margin-top: 3px;
+  float: right;
+  width: 76px;
+  line-height: 9px;
 }
 
-/*.line2 {
-  position: absolute;
-  bottom: 10px;
-  left: 156px;
-  height: 105px;
-  width: 1px;
-  background: #000;
-  content: "";
-}*/
+
+
+.dio label {
+  font-size: 10px;
+  font-family: Arial;
+  width: 50px;
+  line-height: 10px;
+  padding-right: 12px;
+}
+
+.dio select {
+  width: 55px;
+  background-position-x: 37px;
+}
+
+.dio2 label {
+  font-size: 10px;
+  font-family: Arial;
+  width: 50px;
+}
+
+.dio2 select {
+  width: 55px;
+  background-position-x: 37px;
+}
+
+.dio span {
+  font-size: 9px;
+  color: #8d999d;
+}
+
+.dio2 span {
+  font-size: 9px;
+  color: #8d999d;
+}
+
+.search3 {
+  text-align: right;
+  font-size: 14px;
+  font-family: Arial;
+  font-style: italic;
+  text-decoration: underline;
+  color: #154467;
+  margin-top: 8px;
+  margin-right: 20px;
+}
+
+
 
 .catalog {
   width: 191px;
@@ -677,7 +762,17 @@ position: relative;
   margin-top: 18px;
 }
 
-.brands input[type=]{
+.brands input[type=checkbox]+label::before{
+  display: inline-block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 1px solid #b6b6b7;
+  background: #fff;
+  box-shadow: inset 10px 10px 5px -10px rgba(0,0,0,0.75);
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 3px;
 
 }
 
